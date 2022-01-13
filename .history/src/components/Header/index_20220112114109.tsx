@@ -8,13 +8,10 @@ import { useCart } from '../../hooks/useCart';
 
 const Header = (): JSX.Element => {
   const { cart } = useCart();
-  let count =0;
-  console.log(cart)
-  const cartSize = cart.map((product) => count +=1
-    //percorrer os produtos com id diferente e somar
-    //
-    
-  ).length;// TODO;
+  const cartSize = cart.map((product) => {
+    console.log(product.id)
+    return [1]
+  });// TODO;
 
   return (
     <Container>

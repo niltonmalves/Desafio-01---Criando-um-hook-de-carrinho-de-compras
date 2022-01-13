@@ -8,13 +8,11 @@ import { useCart } from '../../hooks/useCart';
 
 const Header = (): JSX.Element => {
   const { cart } = useCart();
-  let count =0;
-  console.log(cart)
-  const cartSize = cart.map((product) => count +=1
-    //percorrer os produtos com id diferente e somar
-    //
-    
-  ).length;// TODO;
+  const cartSize = cart.map((product) => {
+    console.log(product.id)
+    return `${product.id} ${product.amount}
+    `
+  });// TODO;
 
   return (
     <Container>
@@ -26,7 +24,7 @@ const Header = (): JSX.Element => {
         <div>
           <strong>Meu carrinho</strong>
           <span data-testid="cart-size">
-            {cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`}
+            {/* {cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`} */}
           </span>
         </div>
         <MdShoppingBasket size={36} color="#FFF" />

@@ -10,11 +10,11 @@ const Header = (): JSX.Element => {
   const { cart } = useCart();
   let count =0;
   console.log(cart)
-  const cartSize = cart.map((product) => count +=1
+  const cartSize = cart.map((product) => (count +=1)
     //percorrer os produtos com id diferente e somar
     //
     
-  ).length;// TODO;
+  );// TODO;
 
   return (
     <Container>

@@ -72,7 +72,7 @@ const Home = (): JSX.Element => {
           <span>ADICIONAR AO CARRINHO</span>
         </button>
       </li>
-      ))}
+      )}
     </ProductList>
   );
 };

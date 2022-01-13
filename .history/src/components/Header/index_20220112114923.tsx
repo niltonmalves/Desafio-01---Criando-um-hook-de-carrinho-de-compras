@@ -14,7 +14,7 @@ const Header = (): JSX.Element => {
     //percorrer os produtos com id diferente e somar
     //
     
-  ).length;// TODO;
+  );// TODO;
 
   return (
     <Container>
